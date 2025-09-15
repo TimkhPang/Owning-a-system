@@ -1,23 +1,27 @@
-# Owning a system
-Simulating the role of a hacker to remotely access a victim's target machine, maintain a backdoor, and crack sensitive passwords.
+# Owning-a-System: Post-Exploitation & Privilege Escalation Simulation
 
-Concepts:
-1. Maintaining Access
-2. Exfiltrating Data
-3. Privilege Escalation
+This project simulates the post-exploitation phase of a cybersecurity attack, focusing on maintaining access, escalating privileges, and cracking sensitive passwords on a compromised system. Utilizing tools like John the Ripper and leveraging virtualization platforms such as Microsoft Azure and Hyper-V, this exercise demonstrates the methodologies employed by attackers to fortify their foothold within a target environment.
 
-Tasks:
-1. Creating Secret User
-2. Creating a System ID for said user
-3. Granting User full sudo access
-4. Opening a port specifically for backdoor SSH access
-5. Using John the Ripper to crack the extracted passwords
+---
 
-Tools:
-1. Microsoft Azure Cloud
-2. Hyper-V Virtualization - Linux
-3. Target machine - Windows RDP
-4. Attacker machine - Windows RDP
-5. John the Ripper
-6. sysd
-7. sshd
+## 🛠 Tools & Techniques Utilized
+
+| Tool / Technique             | Purpose / Security Functionality                                         |
+|------------------------------|---------------------------------------------------------------------------|
+| **Microsoft Azure Cloud**    | Hosting and managing virtualized environments for testing and simulation  |
+| **Hyper-V Virtualization**   | Creating and managing virtual machines for isolated testing environments  |
+| **Linux Target Machine**     | Simulating a compromised Linux system for post-exploitation activities   |
+| **John the Ripper**          | Cracking password hashes to retrieve plaintext passwords                  |
+| **SSH**                      | Establishing secure backdoor access to the compromised system            |
+| **sudo**                     | Granting elevated privileges to user accounts                             |
+
+---
+
+## 🎯 Objectives & Key Outcomes
+
+| Objective                                  | Methodology & Tools Employed                                      | Outcome / Recommendations                                           |
+|--------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------|
+| **Maintain Access**                        | Created a secret user with full sudo access and SSH backdoor      | Ensured persistent access to the compromised system                  |
+| **Privilege Escalation**                   | Assigned a system ID to the new user and granted administrative privileges | Elevated user privileges to root level                               |
+| **Password Cracking**                      | Utilized John the Ripper to crack password hashes                  | Retrieved plaintext passwords for further exploitation               |
+| **Data Exfiltration**                      | Accessed and extracted sensitive data from the compromised system  | Demonstrated potential data breach and information leakage           |
